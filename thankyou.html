@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ขอบคุณที่สั่งซื้อ — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าขอบคุณ (ไม่แตะ style.css) */
+    .thanks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 77px);
+      min-height: calc(100svh - 77px);
+      padding-block: var(--space-5);
+      text-align: center;
+    }
+    .thanks p {
+      margin-inline: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">BODY SCENT</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thanks">
+    <div class="container">
+      <h1>ขอบคุณที่สั่งซื้อ</h1>
+      <hr class="rule">
+      <p class="lead">เราได้รับคำสั่งซื้อของคุณเรียบร้อยแล้ว และจะติดต่อกลับผ่านช่องทางที่คุณระบุไว้โดยเร็วที่สุด</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a class="btn" href="index.html">กลับหน้าแรก</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

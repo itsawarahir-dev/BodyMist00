@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด — Body Scent</title>
+  <meta name="description" content="น้ำหอมฉีดตัวและโรลออน Body Scent เลือกตามอารมณ์ Fresh, Sweet, Confident และ Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าสินค้า (ไม่แตะ style.css) */
+    .page-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+    }
+    .nav a[aria-current="page"] {
+      color: var(--ink);
+      border-color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">BODY SCENT</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="page-title">สินค้าทั้งหมด</h1>
+          <hr class="rule">
+          <p class="lead">เลือกกลิ่นที่ใช่ตามอารมณ์ของคุณ</p>
+        </div>
+
+        <!-- script.js จะสร้างปุ่มกรองและการ์ดสินค้าให้ในสองช่องนี้ -->
+        <div id="filter-bar"></div>
+        <div id="product-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Body Scent. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
